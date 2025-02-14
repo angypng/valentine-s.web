@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+#container {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff4b5c;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #6a0572;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#yes-btn {
+    background: #ff9a8b;
+    color: white;
+}
+
+#no-btn {
+    background: #6a0572;
+    color: white;
+}
+
+#hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100vh); }
+}
